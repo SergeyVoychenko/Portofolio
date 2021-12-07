@@ -1,0 +1,34 @@
+.hero {
+    padding-top: 93px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgba(198, 108, 73, 0.3), rgba(198, 108, 73, 0.3)),
+        url(../img/Hero.jpg) no-repeat;
+    background-size: cover;
+}
+.hiro-content {
+}
+.about {
+}
+.skills {
+}
+.skills-wrapper {
+}
+.skills-wrapper-name {
+}
+.skills-wrapper-skills {
+}
+.portfolio {
+}
+.arrows {
+}
+.arrow-left {
+}
+.arrow-right {
+}
+.portfolio-img {
+}
+.get-in-touch {
+}
+.arrow-top {
+}
