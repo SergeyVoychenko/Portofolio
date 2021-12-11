@@ -8,27 +8,20 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-.about {
+.heading {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #333333;
 }
-.skills {
+.txt {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.66;
+    color: #333333;
+    text-align: justify;
 }
-.skills-wrapper {
-}
-.skills-wrapper-name {
-}
-.skills-wrapper-skills {
-}
-.portfolio {
-}
-.arrows {
-}
-.arrow-left {
-}
-.arrow-right {
-}
-.portfolio-img {
-}
-.get-in-touch {
-}
-.arrow-top {
+.skills-progress-bar {
+    background-color: #F5D6AB;
+    height: 24px;
 }
