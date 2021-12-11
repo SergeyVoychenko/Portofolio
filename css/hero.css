@@ -6,29 +6,53 @@
         url(../img/Hero.jpg) no-repeat;
     background-size: cover;
 }
-.hiro-content {
+.logo {
+    width: 116px;
+    height: 29px;
 }
-.about {
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "a b";
+    align-items: center;
+    margin-bottom: 145px;
 }
-.skills {
+header a {
+    grid-area: a;
+    justify-self: start;
 }
-.skills-wrapper {
+.menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
 }
-.skills-wrapper-name {
+.menu li > a {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.22;
+    color: white;
 }
-.skills-wrapper-skills {
+.menu li > a:hover {
+    font-weight: bold;
 }
-.portfolio {
+.hero-content > h1 {
+    font-size: 6.4rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: white;
+    margin-bottom: 26px;
 }
-.arrows {
+.hero-content > p {
+    font-size: 2.4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    color: white;
+    margin-bottom: 106px;
 }
-.arrow-left {
-}
-.arrow-right {
-}
-.portfolio-img {
-}
-.get-in-touch {
-}
-.arrow-top {
+.hero-content > a {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 1.22;
+    color: white;
+    text-decoration: underline;
 }

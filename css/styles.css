@@ -1,5 +1,5 @@
 html {
-    font-family: LibreFranklin, sans-serif;
+    font-family: "Libre Franklin", sans-serif;
     font-style: normal;
     font-size: 10px;
 }
@@ -7,4 +7,28 @@ html {
     width: 1110px;
     margin-left: auto;
     margin-right: auto;
+}
+.about {
+}
+.skills {
+}
+.skills-wrapper {
+}
+.skills-wrapper-name {
+}
+.skills-wrapper-skills {
+}
+.portfolio {
+}
+.arrows {
+}
+.arrow-left {
+}
+.arrow-right {
+}
+.portfolio-img {
+}
+.get-in-touch {
+}
+.arrow-top {
 }
