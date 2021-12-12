@@ -1,10 +1,17 @@
 .hero {
     padding-top: 93px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     min-height: 100vh;
     background: linear-gradient(to right, rgba(198, 108, 73, 0.3), rgba(198, 108, 73, 0.3)),
         url(../img/Hero.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.hero > div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 .logo {
     width: 116px;
@@ -15,7 +22,7 @@ header {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "a b";
     align-items: center;
-    margin-bottom: 145px;
+    margin-bottom: 45px;
 }
 header a {
     grid-area: a;
@@ -34,6 +41,12 @@ header a {
 }
 .menu li > a:hover {
     font-weight: bold;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
 }
 .hero-content > h1 {
     font-size: 6.4rem;
