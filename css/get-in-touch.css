@@ -1,0 +1,35 @@
+.get-in-touch {
+    padding-bottom: 70px;
+    padding-top: 93px;
+    background-color: #fffaf2;
+    height: 528px;
+}
+.arrow-top {
+    align-self: end;
+    justify-self: end;
+    grid-area: b ;
+}
+.arrow-top::after {
+    content: url(../img/Arrow.svg);
+    display: inline-block;
+}
+.heading-position {
+    margin-bottom: 51px;
+}
+.get-in-touch-wrapper {
+    display: grid;
+    grid-template-columns: 36% 36% 28%;
+    grid-template-rows: 1fr 120px;
+    grid-template-areas: 
+    "a a a"
+    "b b b";
+}
+.get-in-touch-wrapper a {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.22;
+    color: #333333;
+}
+.get-in-touch-wrapper li {
+    margin-bottom: 14px;
+}
