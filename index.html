@@ -13,10 +13,10 @@
 <body>
     <main>
         <!-- Start hero -->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <header>
-                    <a href="#" id="top">
+                    <a href="https://www.figma.com/file/F559yfjzAbvlNMIVXG8Eby/Portofolio?node-id=1%3A4" target="_blank">
                         <img class="logo" src="img/Logo.svg" alt="Logo">
                     </a>
                     <nav>
@@ -25,16 +25,16 @@
                                 <a href="#">Home</a>
                             </li>
                             <li>
-                                <a href="#">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
-                                <a href="#">Skills</a>
+                                <a href="#skills">Skills</a>
                             </li>
                             <li>
-                                <a href="#">Portfolio</a>
+                                <a href="#portfolio">Portfolio</a>
                             </li>
                             <li>
-                                <a href="#">Contact</a>
+                                <a href="#get-in-touch">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -48,7 +48,7 @@
         </section>
         <!-- End hero -->
         <!-- Start about -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2 class="heading about-heading-position">About</h2>
                 <div class="about-wrapper">
@@ -69,7 +69,7 @@
         </section>
         <!-- End about -->
         <!-- Start skills -->
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="container">
                 <h2 class="heading skills-heading-position">Skills</h2>
                 <div class="skills-wrapper">
@@ -101,7 +101,7 @@
         </section>
         <!-- End skills -->
         <!-- Start Portfolio -->
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h2 class="heading portfolio-heading-position">Portfolio</h2>
                 <h3>UX Research</h3>
@@ -129,7 +129,7 @@
         <!-- End Portfolio -->
     </main>
     <!-- Start footer -->
-    <footer class="get-in-touch">
+    <footer class="get-in-touch" id="get-in-touch">
         <div class="container">
             <h2 class="heading heading-position">Get in Touch</h2>
             <div class="get-in-touch-wrapper">
@@ -150,11 +150,25 @@
                     <li><a href="mailto:seyrig@mailme.com">seyrig@mailme.com</a></li>
                     <li><a href="tel:+556645665544">+ 55 6645 665544</a></li>
                 </ul>
-                <a class="arrow-top" href="#"></a>
+                <a class="arrow-top" href="#hero" onclick="return up()"></a>
             </div>
         </div>
     </footer>
     <!-- End footer -->
+    <script type="text/javascript">
+        const smoothLinks = document.querySelectorAll('a[href^="#"]');
+        for (let smoothLink of smoothLinks) {
+            smoothLink.addEventListener('click', function (e) {
+                e.preventDefault();
+                const id = smoothLink.getAttribute('href');
+
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        };
+    </script>
 </body>
 
 </html>
