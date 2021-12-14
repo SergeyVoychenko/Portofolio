@@ -8,20 +8,31 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-.heading {
+.title {
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 1.2;
     color: #333333;
 }
-.txt {
+.text--style {
     font-weight: normal;
     font-size: 1.8rem;
     line-height: 1.66;
     color: #333333;
     text-align: justify;
 }
-.skills-progress-bar {
-    background-color: #f5d6ab;
-    height: 24px;
+.arrow-left::after {
+    content: url(../img/Arrow.svg);
+    transform: rotate(-90deg);
+    display: inline-block;
+    margin-right: 14px;
+}
+.arrow-right::after {
+    content: url(../img/Arrow.svg);
+    transform: rotate(90deg);
+    display: inline-block;
+}
+.arrow-top::after {
+    content: url(../img/Arrow.svg);
+    display: inline-block;
 }

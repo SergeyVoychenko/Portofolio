@@ -2,9 +2,16 @@
     padding-top: 93px;
     padding-bottom: 115px;
 }
-.about-heading-position {
+.about__title {
     margin-bottom: 76px;
 }
-.about-wrapper-txt {
+.about__text {
     margin-bottom: 45px;
+}
+.about__text--style {
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 1.66;
+    color: #333333;
+    text-align: justify;
 }

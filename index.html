@@ -14,35 +14,36 @@
     <main>
         <!-- Start hero -->
         <section class="hero" id="hero">
-            <div class="container">
-                <header>
-                    <a href="https://www.figma.com/file/F559yfjzAbvlNMIVXG8Eby/Portofolio?node-id=1%3A4" target="_blank">
-                        <img class="logo" src="img/Logo.svg" alt="Logo">
+            <div class="container hero__container">
+                <header class="header">
+                    <a class="logo" href="https://www.figma.com/file/F559yfjzAbvlNMIVXG8Eby/Portofolio?node-id=1%3A4"
+                        target="_blank">
+                        <img class="logo-img" src="img/Logo.svg" alt="Logo">
                     </a>
-                    <nav>
-                        <ul class="menu">
-                            <li>
-                                <a href="#">Home</a>
+                    <nav class="header-nav">
+                        <ul class="header-nav__list">
+                            <li class="header-nav__item">
+                                <a class="header-nav__link" href="#">Home</a>
                             </li>
-                            <li>
-                                <a href="#about">About</a>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link" href="#about">About</a>
                             </li>
-                            <li>
-                                <a href="#skills">Skills</a>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link" href="#skills">Skills</a>
                             </li>
-                            <li>
-                                <a href="#portfolio">Portfolio</a>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link" href="#portfolio">Portfolio</a>
                             </li>
-                            <li>
-                                <a href="#get-in-touch">Contact</a>
+                            <li class="header-nav__item">
+                                <a class="header-nav__link" href="#get-in-touch">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </header>
-                <div class="hero-content">
-                    <h1>Hi, It’s Théophile Seyrig</h1>
-                    <p>Designer from Porto, Portugal</p>
-                    <a href="#">Latest works</a>
+                <div class="hero__content">
+                    <h1 class="hero__title">Hi, It’s Théophile Seyrig</h1>
+                    <p class="hero__text">Designer from Porto, Portugal</p>
+                    <a class="hero__link" href="#">Latest works</a>
                 </div>
             </div>
         </section>
@@ -50,15 +51,15 @@
         <!-- Start about -->
         <section class="about" id="about">
             <div class="container">
-                <h2 class="heading about-heading-position">About</h2>
-                <div class="about-wrapper">
-                    <p class="txt about-wrapper-txt">
+                <h2 class="title about__title">About</h2>
+                <div class="about-wrapper-for-text">
+                    <p class="text--style about__text">
                         Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam
                         penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus
                         sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas
                         aliquet mollis.
                     </p>
-                    <p class="txt about-wrapper-txt">
+                    <p class="about__text--style about__text">
                         Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in
                         rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing
                         elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus
@@ -71,29 +72,29 @@
         <!-- Start skills -->
         <section class="skills" id="skills">
             <div class="container">
-                <h2 class="heading skills-heading-position">Skills</h2>
-                <div class="skills-wrapper">
-                    <img class="skills-img" src="img/men.jpg" alt="foto men">
-                    <div class="skills-wrapper-list">
-                        <ul class="skills-list">
-                            <li>Profile</li>
-                            <li></li>
-                            <li>UX Research</li>
-                            <li>Tools</li>
-                            <li>UI Design</li>
-                            <li>Tools</li>
-                            <li>Front-end Dev</li>
-                            <li>Tools</li>
+                <h2 class="title skills__title">Skills</h2>
+                <div class="skills__wrapper">
+                    <img class="skills__img" src="img/men.jpg" alt="foto men">
+                    <div class="skills__list-wrapper">
+                        <ul class="skills__list">
+                            <li class="skills__list-item">Profile</li>
+                            <li class="skills__list-item"></li>
+                            <li class="skills__list-item">UX Research</li>
+                            <li class="skills__list-item">Tools</li>
+                            <li class="skills__list-item">UI Design</li>
+                            <li class="skills__list-item">Tools</li>
+                            <li class="skills__list-item">Front-end Dev</li>
+                            <li class="skills__list-item">Tools</li>
                         </ul>
-                        <ul class="skills-list-progress">
-                            <li>UI / UX Engineer, Front-end Developer</li>
-                            <li></li>
-                            <li class="uxresearch-progress-bar skills-progress-bar"></li>
-                            <li>Paper, Pen, Balsamiq</li>
-                            <li class="uidesign-progress-bar skills-progress-bar"></li>
-                            <li>Adobe PS, AI, XD, Figma, InVision</li>
-                            <li class="front-end-progress-bar skills-progress-bar"></li>
-                            <li>HTML, CSS, JS, Bootstrap, React</li>
+                        <ul class="skills__list-progress">
+                            <li class="skills__list-progress-item">UI / UX Engineer, Front-end Developer</li>
+                            <li class="skills__list-progress-item"></li>
+                            <li class="skills__list-progress-item skills__progress-bar uxresearch__progress-bar"></li>
+                            <li class="skills__list-progress-item">Paper, Pen, Balsamiq</li>
+                            <li class="skills__list-progress-item skills__progress-bar uidesign__progress-bar"></li>
+                            <li class="skills__list-progress-item">Adobe PS, AI, XD, Figma, InVision</li>
+                            <li class="skills__list-progress-item skills__progress-bar front-end__progress-bar"></li>
+                            <li class="skills__list-progress-item">HTML, CSS, JS, Bootstrap, React</li>
                         </ul>
                     </div>
                 </div>
@@ -103,25 +104,25 @@
         <!-- Start Portfolio -->
         <section class="portfolio" id="portfolio">
             <div class="container">
-                <h2 class="heading portfolio-heading-position">Portfolio</h2>
-                <h3>UX Research</h3>
-                <div class="portfolio-wrapper">
-                    <div class="portfolio-wrapper-txt">
-                        <p class="txt">
+                <h2 class="title portfolio__title">Portfolio</h2>
+                <h3 class="portfolio__title-2">UX Research</h3>
+                <div class="portfolio__wrapper">
+                    <div class="portfolio__text">
+                        <p class="text--style">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id.
                             Diam
                             massa semper a tincidunt cursus ultricies lectus eget urna.
                         </p>
-                        <div class="arrows-left-right">
-                            <a class="arrow-left" href="#"></a>
-                            <a class="arrow-right" href="#"></a>
+                        <div class="portfolio__arrows">
+                            <a class="arrow-left portfolio__link" href="#"></a>
+                            <a class="arrow-right portfolio__link" href="#"></a>
                         </div>
                     </div>
-                    <div class="portfolio-img">
-                        <img class="img-1" src="img/river_and_bridge.jpg" alt="Foto river and bridge">
-                        <img class="img-2" src="img/bridge.jpg" alt="Foto bridge">
-                        <img class="img-3" src="img/river.jpg" alt="Foto river">
-                        <img class="img-4" src="img/Hero-sm.jpg" alt="Foto of an old house">
+                    <div class="portfolio__imgs">
+                        <img class="portfolio__img-1" src="img/river_and_bridge.jpg" alt="Foto river and bridge">
+                        <img class="portfolio__img-2" src="img/bridge.jpg" alt="Foto bridge">
+                        <img class="portfolio__img-3" src="img/river.jpg" alt="Foto river">
+                        <img class="portfolio__img-4" src="img/Hero-sm.jpg" alt="Foto of an old house">
                     </div>
                 </div>
             </div>
@@ -131,26 +132,28 @@
     <!-- Start footer -->
     <footer class="get-in-touch" id="get-in-touch">
         <div class="container">
-            <h2 class="heading heading-position">Get in Touch</h2>
-            <div class="get-in-touch-wrapper">
+            <h2 class="title get-in-touch__title">Get in Touch</h2>
+            <div class="get-in-touch__list">
                 <ul>
-                    <li><a href="#">Dribbble</a></li>
-                    <li><a href="#">Behance</a></li>
-                    <li><a href="#">CodePen</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Medium</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">Dribbble</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">Behance</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">CodePen</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">GitHub</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">Medium</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#">LinkedIn</a></li>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">LinkedIn</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">Facebook</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">Instagram</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="#">Twitter</a></li>
                 </ul>
                 <ul>
-                    <li><a href="mailto:seyrig@mailme.com">seyrig@mailme.com</a></li>
-                    <li><a href="tel:+556645665544">+ 55 6645 665544</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link"
+                            href="mailto:seyrig@mailme.com">seyrig@mailme.com</a></li>
+                    <li class="get-in-touch__item"><a class="get-in-touch__link" href="tel:+556645665544">+ 55 6645
+                            665544</a></li>
                 </ul>
-                <a class="arrow-top" href="#hero" onclick="return up()"></a>
+                <a class="arrow-top arrow-top--grid" href="#hero" onclick="return up()"></a>
             </div>
         </div>
     </footer>

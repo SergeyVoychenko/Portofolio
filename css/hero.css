@@ -8,61 +8,61 @@
     display: flex;
     flex-direction: column;
 }
-.hero > div {
+.hero__container {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
-.logo {
+.logo-img {
     width: 116px;
     height: 29px;
 }
-header {
+.header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "a b";
     align-items: center;
     margin-bottom: 45px;
 }
-header a {
+.logo {
     grid-area: a;
     justify-self: start;
 }
-.menu {
+.header-nav__list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
 }
-.menu li > a {
+.header-nav__link {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.22;
     color: white;
 }
-.menu li > a:hover {
+.header-nav__link:hover {
     font-weight: bold;
 }
-.hero-content {
+.hero__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
 }
-.hero-content > h1 {
+.hero__title {
     font-size: 6.4rem;
     font-weight: normal;
     line-height: 1.22;
     color: white;
     margin-bottom: 26px;
 }
-.hero-content > p {
+.hero__text {
     font-size: 2.4rem;
     font-weight: normal;
     line-height: 1.2;
     color: white;
     margin-bottom: 106px;
 }
-.hero-content > a {
+.hero__link {
     font-size: 1.8rem;
     font-weight: normal;
     line-height: 1.22;
