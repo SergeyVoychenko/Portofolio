@@ -14,10 +14,11 @@
 }
 .portfolio__wrapper {
     display: grid;
-    grid-template-columns: 475px 1fr;
+    grid-template-columns: 42% 1fr;
 }
 .portfolio__text {
-    padding-right: 125px;
+    /* padding-right: 125px; */
+    padding-right: 25%;
     display: grid;
     grid-template-rows: 1fr 24px;
 }

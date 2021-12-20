@@ -13,11 +13,11 @@
 }
 .skills__wrapper {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 42% 1fr;
 }
 .skills__list-wrapper {
     display: grid;
-    grid-template-columns: 190px 1fr;
+    grid-template-columns: 33% 1fr;
     padding: 1px;
 }
 .skills__list {
@@ -47,23 +47,24 @@
     display: block;
     background-color: #c66c49;
     height: 24px;
-    width: 381px;
+    width: 85.5%;
 }
 .uidesign__progress-bar::after {
     content: "";
     display: block;
     background-color: #c66c49;
     height: 24px;
-    width: 351px;
+    width: 78.7%;
 }
 .front-end__progress-bar::after {
     content: "";
     display: block;
     background-color: #c66c49;
     height: 24px;
-    width: 286px;
+    width: 64.12%;
 }
 .skills__progress-bar {
     background-color: #f5d6ab;
     height: 24px;
+    width: 100%;
 }
