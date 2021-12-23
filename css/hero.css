@@ -13,9 +13,27 @@
     display: flex;
     flex-direction: column;
 }
+@media screen and (max-width: 1200px) {
+    .hero__container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+@media screen and (max-width: 895px) {
+    .hero {
+        padding-top: 10%;
+        padding-bottom: 1%;
+    }
+}
 .logo-img {
     width: 116px;
     height: 29px;
+}
+@media screen and (max-width: 895px) {
+    .logo-img {
+        width: 230px;
+        height: 60px;
+    }
 }
 .header {
     display: grid;
@@ -23,6 +41,13 @@
     grid-template-areas: "a b";
     align-items: center;
     margin-bottom: 45px;
+}
+@media screen and (max-width: 895px) {
+    .header {
+        grid-template-areas: "b a";
+        grid-template-columns: 1px 1fr;
+        position: relative;
+    }
 }
 .logo {
     grid-area: a;
@@ -33,11 +58,45 @@
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
 }
+@media screen and (max-width: 895px) {
+    .header-nav__list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        justify-items: start;
+        position: absolute;
+        background-color: hsla(35, 92%, 20%, 0.9);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
+@media screen and (max-width: 895px) {
+    .logo {
+        justify-self: center;
+    }
+    .header-nav::before {
+        content: "☰";
+        font-size: 4rem;
+        color: #ffffff;
+    }
+    .header-nav__item {
+        margin: 8px;
+    }
+    .header-nav:hover .header-nav__list {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 .header-nav__link {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.22;
     color: white;
+}
+@media screen and (max-width: 895px) {
+    .header-nav__link {
+        font-size: 2.8rem;
+    }
 }
 .header-nav__link:hover {
     font-weight: bold;
@@ -68,4 +127,11 @@
     line-height: 1.22;
     color: white;
     text-decoration: underline;
+}
+@media screen and (max-width: 895px) {
+    .hero__title,
+    .hero__text,
+    .hero__link {
+        text-align: center;
+    }
 }

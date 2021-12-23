@@ -3,17 +3,46 @@
     padding-top: 93px;
     background-color: #fffaf2;
 }
+@media screen and (max-width: 895px) {
+    .skills {
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
+}
 .skills__title {
     margin-bottom: 86px;
 }
+@media screen and (max-width: 895px) {
+    .skills__title {
+        margin-bottom: 25px;
+    }
+}
+.skills__img-wrapper {
+    overflow: hidden;
+    padding-right: 25%;
+}
+@media screen and (max-width: 1200px) {
+    .skills__img-wrapper {
+        padding-right: 10%;
+    }
+}
+@media screen and (max-width: 895px) {
+    .skills__img-wrapper {
+        padding:0 30%;
+    }
+}
 .skills__img {
-    width: 350px;
-    height: 340px;
-    margin-right: 125px;
+    width: 100%;
 }
 .skills__wrapper {
     display: grid;
     grid-template-columns: 42% 1fr;
+}
+@media screen and (max-width: 895px) {
+    .skills__wrapper {
+        grid-template-columns: 1fr;
+        row-gap: 3%;
+    }
 }
 .skills__list-wrapper {
     display: grid;
@@ -24,6 +53,13 @@
     display: grid;
     grid-template-rows: repeat(8, 45px);
     padding-left: 1px;
+}
+@media screen and (max-width: 895px) {
+    .skills__list {
+        display: grid;
+        grid-template-rows: repeat(8, 25px);
+        padding-left: 1px;
+    }
 }
 .skills__list-item {
     color: #333333;
@@ -36,11 +72,23 @@
     grid-template-rows: repeat(8, 45px);
     padding-left: 1px;
 }
+@media screen and (max-width: 895px) {
+    .skills__list-progress {
+        display: grid;
+        grid-template-rows: repeat(8, 25px);
+        padding-left: 1px;
+    }
+}
 .skills__list-progress-item {
     color: #333333;
     font-weight: normal;
     font-size: 1.8rem;
     line-height: 1.39;
+}
+@media screen and (max-width: 895px) {
+    .skills__list-progress-item {
+        line-height: 1;
+    }
 }
 .uxresearch__progress-bar::after {
     content: "";

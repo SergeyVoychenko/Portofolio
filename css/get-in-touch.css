@@ -2,15 +2,30 @@
     padding-bottom: 70px;
     padding-top: 93px;
     background-color: #fffaf2;
-    height: 528px;
+}
+@media screen and (max-width: 895px) {
+    .get-in-touch {
+        padding-bottom: 25px;
+        padding-top: 25px;
+    }
 }
 .arrow-top--grid {
     align-self: end;
     justify-self: end;
     grid-area: b;
 }
+@media screen and (max-width: 895px) {
+    .arrow-top--grid {
+        align-self: start;
+    }
+}
 .get-in-touch__title {
     margin-bottom: 51px;
+}
+@media screen and (max-width: 895px) {
+    .get-in-touch__title {
+        margin-bottom: 25px;
+    }
 }
 .get-in-touch__list {
     display: grid;
@@ -19,6 +34,17 @@
     grid-template-areas:
         "a a a"
         "b b b";
+}
+@media screen and (max-width: 895px) {
+    .get-in-touch__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70% 30%;
+        row-gap: 10px;
+        grid-template-areas:
+            "a d"
+            "c b";
+    }
 }
 .get-in-touch__link {
     font-weight: normal;
