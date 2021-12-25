@@ -6,6 +6,11 @@
         margin-bottom: 25px;
     }
 }
+@media screen and (max-width: 700px) {
+    .portfolio__title {
+        margin-bottom: 19px;
+    }
+}
 .portfolio {
     padding-top: 93px;
     padding-bottom: 139px;
@@ -26,6 +31,14 @@
 @media screen and (max-width: 895px) {
     .portfolio__title-2 {
         margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 895px) {
+    .portfolio__title-2 {
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.78;
+        margin-bottom: 15px;
     }
 }
 .portfolio__wrapper {
@@ -49,7 +62,7 @@
 }
 @media screen and (max-width: 895px) {
     .portfolio__text {
-        padding:0 0;
+        padding: 0 0;
     }
 }
 .portfolio__imgs {
@@ -63,6 +76,11 @@
         "c c c b b"
         "c c c d d"
         "c c c d d";
+}
+@media screen and (max-width: 700px) {
+    .portfolio__imgs {
+        gap: 13px;
+    }
 }
 .portfolio__img-1 {
     grid-area: a;

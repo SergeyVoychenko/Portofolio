@@ -31,6 +31,11 @@
         padding:0 30%;
     }
 }
+@media screen and (max-width: 700px) {
+    .skills__img-wrapper {
+        padding:0 0;
+    }
+}
 .skills__img {
     width: 100%;
 }
@@ -61,11 +66,23 @@
         padding-left: 1px;
     }
 }
+@media screen and (max-width: 700px) {
+    .skills__list {
+        grid-template-rows: repeat(8, 36px);
+    }
+}
 .skills__list-item {
     color: #333333;
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 1.39;
+}
+@media screen and (max-width: 700px) {
+    .skills__list-item {
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.39;
+    }
 }
 .skills__list-progress {
     display: grid;
@@ -79,6 +96,11 @@
         padding-left: 1px;
     }
 }
+@media screen and (max-width: 700px) {
+    .skills__list-progress {
+        grid-template-rows: repeat(8, 36px);
+    }
+}
 .skills__list-progress-item {
     color: #333333;
     font-weight: normal;
@@ -88,6 +110,12 @@
 @media screen and (max-width: 895px) {
     .skills__list-progress-item {
         line-height: 1;
+    }
+}
+@media screen and (max-width: 700px) {
+    .skills__list-progress-item {
+        font-size: 1.2rem;
+        line-height: 1.39;
     }
 }
 .uxresearch__progress-bar::after {
@@ -116,3 +144,30 @@
     height: 24px;
     width: 100%;
 }
+@media screen and (max-width: 700px) {
+    .order-1 {
+        order: 1;
+    }
+    .order-2 {
+        order: 2;
+    }
+    .order-3 {
+        order: 7;
+    }
+    .order-4 {
+        order: 8;
+    }
+    .order-5 {
+        order: 5;
+    }
+    .order-6 {
+        order:6;
+    }
+    .order-7 {
+        order: 3;
+    }
+    .order-8 {
+        order: 4;
+    }
+}
+
